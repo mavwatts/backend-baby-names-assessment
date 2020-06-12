@@ -7,7 +7,7 @@
 # Licensed under the Apache License, Version 2.0
 # http://www.apache.org/licenses/LICENSE-2.0
 
-#Authored by Mavrick Watts assistance by Brandi C, Daniel, David R 
+#Authored by Mavrick Watts assistance by Brandi C, Daniel, David R .
 
 """
 Define the extract_names() function below and change main()
@@ -89,7 +89,7 @@ def main(args):
     # Run the parser to collect command line arguments into a
     # NAMESPACE called 'ns'
     ns = parser.parse_args(args)
-
+   
     if not ns:
         parser.print_usage()
         sys.exit(1)
