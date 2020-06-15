@@ -44,6 +44,7 @@ def extract_names(filename):
     the name-rank strings in alphabetical order.
     ['2006', 'Aaliyah 91', 'Aaron 57', 'Abagail 895', ...]
     """
+
     names = []
     with open(filename) as f:   
         text_read = f.read()
@@ -56,7 +57,7 @@ def extract_names(filename):
    
     # [('995', 'Theron', 'Selene'), ('993', 'Emerson', 'Becky'), ('991', 'Cassidy', 'Corrine')]
     # "rank" > 0
-    # "boy" > 1
+    # "boy" > 1       
     # "girl" > 2
     for name_rank in baby_name_rank:
         if name_rank[1] not in names_dict:  
@@ -109,7 +110,7 @@ def main(args):
        if create_summary:
            with open(filename + '.summary', 'w') as file:
                file.write(structured_list)
-        print(structured_list)
+    print(structured_list)
 
 if __name__ == '__main__':
     print(sys.argv)
